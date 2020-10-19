@@ -252,7 +252,7 @@ function render() {
 
 
 function setupQueryLibrary() {
-  fetch('https://confident-conference.org/r/query/queries.json').then(response => {
+  fetch('https://confident-conference.org/r/sparql/queries.json').then(response => {
     return response.json();
   }).then(data => {
     data.forEach(query => {
